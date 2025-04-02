@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sri Venkateshwara Stickers</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #1a1a1a, #6a11cb, #2575fc);
+      color: #fff;
+      text-align: center;
+    }
+
+    .profile-card {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 400px;
+      text-align: center;
+    }
+
+    .logo-img {
+      width: 100px;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid white;
+      object-fit: cover;
+      margin: 10px 0;
+    }
+
+    .social-buttons a img {
+      width: 30px;
+      margin: 0 10px;
+      transition: transform 0.3s;
+    }
+
+    .social-buttons a img:hover {
+      transform: scale(1.2);
+    }
+   .download-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f8b400;
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-top: 15px;
+    }
+
+    .download-btn:hover {
+      background-color: #d89c00;
+    }
+
+    .lists {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 800px;
+    }
+
+
+    .lists h2 {
+      color: #ffcc00;
+      margin-bottom: 15px;
+    }
+
+    .lists ul {
+      list-style: none;
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .lists li {
+      background: #444;
+      padding: 15px;
+      border-radius: 10px;
+      border: 2px solid yellow; /* Yellow border added */
+      transition: 0.3s ease;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .lists li img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .lists li:hover {
+      background: #555;
+      transform: scale(1.05);
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      justify-content: center;
+      align-items: center;
+      overflow: auto;
+    }
+
+    .modal-content {
+      background: #000;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 90%;
+      max-height: 90%;
+      text-align: center;
+    }
+
+    .modal-content img {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .close-btn {
+      background: #ffcc00;
+      color: #000;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+      .lists li img {
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Profile Card Section -->
+<div class="profile-card">
+  <img src="logo.png" alt="Sri Venkateshwara Stickers Logo" class="logo-img">
+  <img src="shop.jpg" alt="Sri Venkateshwara Stickers" class="profile-img">
+  <h1>Sri Venkateshwara Stickers</h1>
+  <p>We provide high-quality stickers and engraving services.</p>
+  <div class="social-buttons">
+    <a href="https://www.instagram.com/stickers_customizer" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+    <a href="mailto:venkateswarastickerdecor@gmail.com">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+    </a>
+    <a href="https://wa.me/918610850531" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+    </a>
+    <a href="http://www.youtube.com/@stickers_customizer" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/YouTube_Logo_2017.svg" alt="YouTube Logo">
+    </a>
+  </div>
+</div>
+
+<div>
+  <a href="1000111182.pdf" download class="download-btn">Download Frostedpics</a>
+</div>
+
+<!-- Services Section -->
+<div class="lists">
+  <h2>Our Services</h2>
+  <ul>
+    <li data-image="num.jpeg">
+      <img src="num.jpeg" alt="Stickers">
+      <p>STICKERS</p>
+    </li>
+    <li data-image="handcutting-icon.png">
+      <img src="handcutting-icon.png" alt="Hand Cutting Stickers">
+      <p>CUSTOMIZED HAND CUTTING STICKERS</p>
+    </li>
+    <li data-image="fcworks-icon.png">
+      <img src="fcworks-icon.png" alt="FC Works">
+      <p>FC WORKS</p>
+    </li>
+    <li data-image="vehicles-icon.png">
+      <img src="vehicles-icon.png" alt="Vehicles">
+      <p>STICKERS FOR VEHICLES AND OFFICE STICKERING</p>
+    </li>
+    <li data-image="signboards-icon.png">
+      <img src="signboards-icon.png" alt="Sign Boards">
+      <p>SIGN BOARDS</p>
+    </li>
+    <li data-image="ledboards-icon.png">
+      <img src="ledboards-icon.png" alt="LED Sign Boards">
+      <p>LED SIGN BOARDS</p>
+    </li>
+    <li data-image="flexboards-icon.png">
+      <img src="flexboards-icon.png" alt="Flex Lighting Boards">
+      <p>FLEX LIGHTING BOARDS</p>
+    </li>
+    <li data-image="nameboards-icon.png">
+      <img src="nameboards-icon.png" alt="Name Boards">
+      <p>NAME BOARDS</p>
+    </li>
+    <li data-image="engraving-icon.png">
+      <img src="engraving-icon.png" alt="Engraving Boards">
+      <p>ENGRAVING BOARDS</p>
+    </li>
+    <li data-image="badges-icon.png">
+      <img src="badges-icon.png" alt="Name Badges">
+      <p>NAME BADGES</p>
+    </li>
+  </ul>
+</div>
+
+<!-- Modal Popup -->
+<div class="modal" id="imageModal">
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Full Image">
+    <button class="close-btn" id="closeModal">Close</button>
+  </div>
+</div>
+
+<script>
+  const modal = document.getElementById('imageModal');
+  const modalImage = document.getElementById('modalImage');
+  const closeModal = document.getElementById('closeModal');
+
+  document.querySelectorAll('.lists li').forEach(item => {
+    item.addEventListener('click', function() {
+      const imageUrl = this.getAttribute('data-image');
+      modalImage.src = imageUrl;
+      modal.style.display = 'flex';
+    });
+  });
+
+  closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
+</script>
+<h2>About us</h2>
+<p> Since 2014,as we are doing a customized stickers and handcutting stickers</p>
+<p>venkateswarastickerdecor@gmail.com</p>
+<p>For contact call:</p>
+<footer>
+  <p>&copy; 2025 Sri Venkateshwara Stickers. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
